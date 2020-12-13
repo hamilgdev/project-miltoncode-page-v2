@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Raleway:wght@400;700&display=swap");
+
+:root {
+  /* COLOR PALETTE */
+  /* Primary color */
+  --c-first-lighter-100: #32efd5;
+  --c-first-main: #0da691;
+  --c-first-darker-100: #075349;
+  --c-second-lighter-100: #e8c970;
+  --c-second-main: #dcae28;
+  --c-second-darker-100: #705812;
+  /* Accents color */
+  --c-accent-lighter: #f8f8f8;
+  --c-accent-darker: #080d19;
+  /* TYPOGRAPHY */
+  --f-first: "Oswald", sans-serif;
+  --f-second: "Raleway", sans-serif;
+  /* FONT SIZE */
+  /* primary */
+  --fp-xxlarge: 36px;
+  --fp-xlarge: 28px;
+  --fp-large: 24px;
+  --fp-base: 18px;
+  --fp-small: 16px;
+  --fp-smaller: 14px;
+  /* secondary */
+  --fs-bigger: 26px;
+  --fs-big: 24px;
+  --fs-medium: 20px;
+  --fs-regular: 18px;
+  --fs-normal: 16px;
+  --fs-small: 14px;
+  /* FONT WEIGHT */
+  --regular: 400;
+  --bold: 700;
+  /* THEME */
+  /* Layers - z-index */
+  --layer-negative-z-index: -1;
+  --layer-page-z-index: 1;
+  --layer-dropdown-z-index: 2;
+  --layer-modal-z-index: 3;
+  --layer-popover-z-index: 4;
+  --layer-tooltip-z-index: 5;
+  /* border radius */
+  --border-radius-redonde: 50px;
+  --border-radius-semi: 10px;
+  --border-radius-minor: 2px;
+  /* Box shadow */
+  --box-shadow: 0px 2px 8px var(--c-accent-darker);
+  --box-shadow-lg: 0 10px 15px -3px var(--c-accent-darker);
+  --box-shadow-xl: 0 25px 50px -12px var(--c-accent-darker);
+  /* ANIMATION */
+  /* Duration */
+  --duration-animation-base: 0.2s ease-out;
+  /* LAYOUT */
+  --header-height: 3rem;
+  --header-margin: 1rem;
+  --gutter: 16px;
+  --max-width: 1240px;
+  --show-element: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  :root {
+    /* LAYOUT */
+    --header-height: 4rem;
+    --header-margin: 2rem;
+    --show-element: block;
+  }
+}

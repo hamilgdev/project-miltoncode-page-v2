@@ -1,0 +1,26 @@
+@tailwind base;
+
+@tailwind components;
+
+/* TYPOGRAPHY */
+.f-first {
+  font-family: var(--f-first);
+}
+
+.f-second {
+  font-family: var(--f-second);
+}
+
+/* @screen md {
+  .l-container {
+    @apply max-w-screen-sm m-auto;
+  }
+}
+
+@screen lg {
+  .l-container {
+    @apply max-w-screen-lg m-auto;
+  }
+} */
+
+@tailwind utilities;
