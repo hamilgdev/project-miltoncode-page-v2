@@ -2,16 +2,21 @@
 
 @tailwind components;
 
-/* TYPOGRAPHY */
-.f-first {
-  font-family: var(--f-first);
+@tailwind utilities;
+
+/* estilos de utilidades personalizadas */
+@layer utilities {
+  /* TYPOGRAPHY */
+  .f-first {
+    font-family: var(--f-first);
+  }
+
+  .f-second {
+    font-family: var(--f-second);
+  }
 }
 
-.f-second {
-  font-family: var(--f-second);
-}
-
-/* @screen md {
+@screen md {
   .l-container {
     @apply max-w-screen-sm m-auto;
   }
@@ -21,6 +26,4 @@
   .l-container {
     @apply max-w-screen-lg m-auto;
   }
-} */
-
-@tailwind utilities;
+}
