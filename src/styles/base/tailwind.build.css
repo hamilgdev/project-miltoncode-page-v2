@@ -14,16 +14,30 @@
   .f-second {
     font-family: var(--f-second);
   }
+
+  .l-container {
+    @apply m-auto px-4 w-full;
+  }
+
+  .animation-transform {
+    @apply transform hover:scale-110 transition-transform duration-300;
+  }
 }
 
 @screen md {
   .l-container {
-    @apply max-w-screen-sm m-auto;
+    @apply max-w-screen-sm px-0;
   }
 }
 
 @screen lg {
   .l-container {
-    @apply max-w-screen-lg m-auto;
+    @apply max-w-screen-lg;
+  }
+}
+
+@screen xl {
+  .l-container {
+    @apply max-w-screen-xl;
   }
 }

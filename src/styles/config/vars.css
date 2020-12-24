@@ -51,7 +51,7 @@
   --box-shadow-xl: 0 25px 50px -12px var(--c-accent-darker);
   /* ANIMATION */
   /* Duration */
-  --duration-animation-base: 0.2s ease-out;
+  --duration-animation-base: 0.3s ease-out;
   /* LAYOUT */
   --header-height: 3rem;
   --header-margin: 1rem;

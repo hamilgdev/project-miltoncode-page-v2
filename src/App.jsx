@@ -11,7 +11,7 @@ const App = () => {
   return (
     <Router>
       <Header />
-      <main className="lg:container m-auto px-4">
+      <main className="lg:container flex-grow">
         <Switch>
           <Route path="/annotations" component={Annotations} />
           <Route path="/projects" component={Projects} />

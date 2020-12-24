@@ -18,6 +18,18 @@ module.exports = {
       "fs-normal": "var(--fs-normal)",
       "fs-small": "var(--fs-small)",
     },
+    screens: {
+      sm: "640px",
+      // => @media (min-width: 640px) { ... }
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
+      lg: "1024px",
+      // => @media (min-width: 1024px) { ... }
+      xl: "1216px",
+      // => @media (min-width: 1216px) { ... }
+      "2xl": "1536px",
+      // => @media (min-width: 1536px) { ... }
+    },
     extend: {
       colors: {
         "c-first-lighter-100": "var(--c-first-lighter-100)",
