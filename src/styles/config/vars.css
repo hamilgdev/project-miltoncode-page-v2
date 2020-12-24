@@ -3,12 +3,25 @@
 :root {
   /* COLOR PALETTE */
   /* Primary color */
+  --c-first-lighter-200: #84f5e6;
   --c-first-lighter-100: #32efd5;
   --c-first-main: #0da691;
   --c-first-darker-100: #075349;
+  /* second color */
   --c-second-lighter-100: #e8c970;
   --c-second-main: #dcae28;
   --c-second-darker-100: #705812;
+
+  /* COLOR PALETTE - OPACITY */
+  /* first color */
+  --c-first-darker-100-h: 172;
+  --c-first-darker-100-s: 84%;
+  --c-first-darker-100-l: 18%;
+  --c-first-darker-100-hsl: var(--c-first-darker-100-h),
+    var(--c-first-darker-100-s), var(--c-first-darker-100-l);
+  --c-first-darker-100-25: hsla(var(--c-first-darker-100-hsl), 0.25);
+  --c-first-darker-100-50: hsla(var(--c-first-darker-100-hsl), 0.5);
+
   /* Accents color */
   --c-accent-lighter: #f8f8f8;
   --c-accent-darker: #080d19;
@@ -46,9 +59,10 @@
   --border-radius-semi: 10px;
   --border-radius-minor: 2px;
   /* Box shadow */
-  --box-shadow: 0px 2px 8px var(--c-accent-darker);
-  --box-shadow-lg: 0 10px 15px -3px var(--c-accent-darker);
-  --box-shadow-xl: 0 25px 50px -12px var(--c-accent-darker);
+  --box-shadow: 0px 2px 8px var(--c-first-darker-100-25);
+  --box-shadow-md: 0 4px 4px 0 var(--c-first-darker-100-25);
+  --box-shadow-lg: 0 10px 15px -3px var(--c-first-darker-100-25);
+  --box-shadow-xl: 0 25px 50px -12px var(--c-first-darker-100-25);
   /* ANIMATION */
   /* Duration */
   --duration-animation-base: 0.3s ease-out;

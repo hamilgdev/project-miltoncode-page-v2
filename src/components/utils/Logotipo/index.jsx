@@ -7,7 +7,7 @@ import IsotipoPositivo from "../../../assets/svg/isotipo-positivo.svg";
 
 const Logotipo = ({ version, mStyles }) => {
   return (
-    <div className={`w-7 animation-transform ${mStyles}`}>
+    <div className={`w-5 lg:w-7 animation-transform ${mStyles}`}>
       <Link to="/">
         <img
           src={version === "negativo" ? IsotipoNegativo : IsotipoPositivo}
