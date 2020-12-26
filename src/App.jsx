@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
-// import Header from "./components/Header";
 import AboutUs from "./pages/AboutUs";
 import Annotations from "./pages/Annotations";
 import Projects from "./pages/Projects";
@@ -12,7 +11,7 @@ const App = () => {
   return (
     <Router>
       <Navbar />
-      <main className="l-container flex-grow">
+      <main>
         <Switch>
           <Route path="/annotations" component={Annotations} />
           <Route path="/projects" component={Projects} />

@@ -15,12 +15,26 @@
     font-family: var(--f-second);
   }
 
+  /* LAYOUT */
   .l-container {
     @apply m-auto px-4 w-full;
   }
 
+  .l-section-sm {
+    @apply px-4 md:px-0 max-w-screen-sm m-auto;
+  }
+
+  .l-section-md {
+    @apply px-4 md:px-0 max-w-screen-md m-auto mb-8;
+  }
+
+  /* THEME */
   .animation-transform {
     @apply transform hover:scale-110 transition-transform duration-300;
+  }
+
+  .title-section {
+    @apply mb-8 uppercase text-fp-xlarge;
   }
 }
 

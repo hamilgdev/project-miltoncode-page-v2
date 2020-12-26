@@ -4,7 +4,7 @@ import NetworksData from "../../data/NetworksData";
 
 const Footer = () => {
   return (
-    <footer className="bg-c-accent-darker text-c-accent-lighter flex items-center justify-between py-2 lg:py-0 lg:h-14">
+    <footer className="sticky -bottom-0 bg-c-accent-darker text-c-accent-lighter flex items-center justify-between py-2 lg:py-0 lg:h-14">
       <div className="l-container flex items-center justify-between">
         <Logotipo mStyles="hidden md:block" version="positivo" />
         <div className="flex flex-wrap">

@@ -11,7 +11,7 @@ const Navbar = () => {
   const handleToggleButton = () => setToggleMenu(!toggleMenu);
 
   return (
-    <header className="bg-c-first-main shadow-box-md flex items-center lg:justify-between overflow-hidden">
+    <header className="sticky z-10 -top-0 bg-c-first-main shadow-box-md flex items-center lg:justify-between overflow-hidden">
       <div className="w-full lg:max-w-screen-lg lg:m-auto xl:max-w-screen-xl flex flex-wrap lg:flex-nowrap items-center justify-between lg:h-14 ">
         <div className="l-container lg:m-0 lg:w-auto flex items-center justify-between py-2 lg:py-0">
           <Logotipo />
