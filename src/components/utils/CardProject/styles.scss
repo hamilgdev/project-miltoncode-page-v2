@@ -1,0 +1,21 @@
+.animate-banner {
+  position: relative;
+  will-change: transform;
+  .card-banner {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--c-accent-darker);
+    transform: scale(0);
+    top: 0;
+    left: 0;
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.6, 1);
+    opacity: 0.9;
+  }
+  &:hover {
+    .card-banner {
+      transform: scale(1);
+    }
+  }
+}

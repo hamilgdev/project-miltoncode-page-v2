@@ -1,13 +1,13 @@
 import React from "react";
-import PhotoProfile from "../assets/img/photo_profile.png";
-import CardSkill from "../components/utils/CardSkill";
-import SkillsData from "../data/SkillsData";
-import NetworksData from "../data/NetworksData";
-import AboutUsData from "../data/AboutUsData";
-import CV from "../assets/files/curriculum_vitae_compressed.pdf";
+import PhotoProfile from "../../assets/img/photo_profile.png";
+import CardSkill from "../../components/utils/CardSkill";
+import NetworksData from "../../data/NetworksData";
+import AboutUsData from "../../data/AboutUsData";
+import CV from "../../assets/files/curriculum_vitae_compressed.pdf";
 
 const AboutUs = () => {
   const { title, subTitle, tagline, sectionAbout, sectionSkills } = AboutUsData;
+  const { skills } = sectionSkills;
 
   return (
     <>
@@ -17,7 +17,7 @@ const AboutUs = () => {
             <h1 className="text-c-accent-darker text-fp-xxlarge lg:text-fp-bigger">
               {title}
             </h1>
-            <p className="text-c-first-darker-100 text-fp-base f-first lg:text-fp-xlarge">
+            <p className="text-c-first-darker-100 text-fp-base f-first lg:text-fp-large">
               {subTitle}
             </p>
             <h2 className="text-c-first-lighter-100 text-fp-large lg:text-fp-xxlarge">
@@ -75,7 +75,7 @@ const AboutUs = () => {
           <p className="text-fs-regular">{sectionSkills.description}</p>
         </div>
         <div className="l-section-sm flex flex-wrap justify-center gap-5">
-          {SkillsData.map((skill, index) => (
+          {skills.map((skill, index) => (
             <CardSkill
               key={index}
               name={skill.name}
