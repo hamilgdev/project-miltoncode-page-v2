@@ -1,6 +1,7 @@
 import React from "react";
 import CardChallenge from "../../components/utils/CardChallenge";
 import CardVideoclip from "../../components/utils/CardVideoclip";
+import CardImageGuide from "../../components/utils/CardImageGuide";
 import EmbedPen from "../../components/utils/EmbedPen";
 import AnnotationsData from "../../data/AnnotationsData";
 
@@ -15,7 +16,8 @@ const Annotations = () => {
     sectionTopCodepens,
   } = AnnotationsData;
 
-  const { challenges } = sectionChallenges,
+  const { visualGuides } = sectionVisualGuides,
+    { challenges } = sectionChallenges,
     { videoClips } = sectionVidioClips,
     { topCodepens } = sectionTopCodepens;
 
@@ -35,6 +37,16 @@ const Annotations = () => {
         <h3 className="title-decoration title-section">
           {sectionVisualGuides.title}
         </h3>
+        <div className="l-container grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {visualGuides.map((visualguide, index) => (
+            <CardImageGuide
+              id={index}
+              key={index}
+              title={visualguide.title}
+              image={visualguide.image}
+            />
+          ))}
+        </div>
       </section>
       <section className="text-center my-24">
         <h3 className="title-decoration title-section">

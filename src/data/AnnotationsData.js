@@ -1,3 +1,16 @@
+// Visual guides
+import visualGuide0101 from "../assets/img/visualGuide0101.jpg";
+import visualGuide0102 from "../assets/img/visualGuide0102.jpg";
+import visualGuide0103 from "../assets/img/visualGuide0103.jpg";
+import visualGuide02 from "../assets/img/visualGuide02.jpg";
+import visualGuide0301 from "../assets/img/visualGuide0301.jpg";
+import visualGuide0302 from "../assets/img/visualGuide0302.jpg";
+import visualGuide0303 from "../assets/img/visualGuide0303.jpg";
+import visualGuide04 from "../assets/img/visualGuide04.jpg";
+import visualGuide0501 from "../assets/img/visualGuide0501.jpg";
+import visualGuide0502 from "../assets/img/visualGuide0502.jpg";
+import visualGuide0503 from "../assets/img/visualGuide0503.jpg";
+import visualGuide06 from "../assets/img/visualGuide06.jpg";
 // challenges
 import challenge01 from "../assets/img/challenge01.jpg";
 // videoclips
@@ -13,7 +26,33 @@ const AnnotationsData = {
   subTitle: "A medida que aprendo, hago anotaciones y comparto...",
   sectionVisualGuides: {
     title: "Guías visuales",
-    visualGuides: [],
+    visualGuides: [
+      {
+        title: "Marcadores de imágenes",
+        image: [visualGuide0101, visualGuide0102, visualGuide0103],
+      },
+
+      {
+        title: "Un poco de nomenclatura JavaScript",
+        image: [visualGuide02],
+      },
+      {
+        title: "Galería de Ilustraciones",
+        image: [visualGuide0301, visualGuide0302, visualGuide0303],
+      },
+      {
+        title: "Tipos de funciones - JavaScript",
+        image: [visualGuide04],
+      },
+      {
+        title: "Directorio de fuentes",
+        image: [visualGuide0501, visualGuide0502, visualGuide0503],
+      },
+      {
+        title: "Tipos de datos - JavaScript",
+        image: [visualGuide06],
+      },
+    ],
   },
   sectionVidioClips: {
     title: "Video Clips",

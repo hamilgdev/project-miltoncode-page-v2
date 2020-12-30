@@ -47,6 +47,9 @@ module.exports = {
       boxShadow: {
         "box-md": "var(--box-shadow-md)",
       },
+      cursor: {
+        "zoom-in": "zoom-in",
+      },
     },
   },
   variants: {},
