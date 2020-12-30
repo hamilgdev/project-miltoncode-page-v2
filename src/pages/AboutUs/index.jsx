@@ -13,20 +13,20 @@ const AboutUs = () => {
     <>
       <header className="sm:overflow-hidden bg-c-first-main relative">
         <div className="l-container grid grid-rows-1 grid-flow-row auto-rows-min sm:grid-cols-2 sm:items-center ">
-          <div className="leading-snug">
-            <h1 className="text-c-accent-darker text-fp-xxlarge lg:text-fp-bigger">
+          <div className=" leading-snug">
+            <h1 className="animation-flow-left text-c-accent-darker text-fp-xxlarge lg:text-fp-bigger">
               {title}
             </h1>
-            <p className="text-c-first-darker-100 text-fp-base f-first lg:text-fp-large">
+            <p className="animation-flow-right text-c-first-darker-100 text-fp-base f-first lg:text-fp-large">
               {subTitle}
             </p>
-            <h2 className="text-c-first-lighter-100 text-fp-large lg:text-fp-xxlarge">
+            <h2 className="animation-flow-left text-c-first-lighter-100 text-fp-large lg:text-fp-xxlarge">
               {tagline}
             </h2>
           </div>
           <div
             style={{ maxWidth: "400px" }}
-            className="lg:m-auto pointer-events-none justify-self-end"
+            className="animation-flow-right lg:m-auto pointer-events-none justify-self-end"
           >
             <img
               className="pointer-events-none"

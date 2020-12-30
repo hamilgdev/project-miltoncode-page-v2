@@ -4,6 +4,9 @@ import project03 from "../assets/img/project03.jpg";
 import project04 from "../assets/img/project04.jpg";
 import project05 from "../assets/img/project05.jpg";
 import project06 from "../assets/img/project06.jpg";
+import project07 from "../assets/img/project07.jpg";
+import project08 from "../assets/img/project08.jpg";
+import project09 from "../assets/img/project09.jpg";
 
 const ProjectsData = {
   title: "Lo divertido",
@@ -43,11 +46,31 @@ const ProjectsData = {
       image: project05,
     },
     {
+      name: "Mockup mobile - FXmovies",
+      linkDesing:
+        "https://www.behance.net/gallery/110253109/Mockup-mobile-FXmovies",
+      linkWeb: "",
+      image: project06,
+    },
+    {
+      name: "Mockup web - Flisol",
+      linkDesing:
+        "https://www.behance.net/gallery/110230605/Mockup-web-Flisol-2020",
+      linkWeb: "",
+      image: project07,
+    },
+    {
+      name: "Mockup web - MNTD",
+      linkDesing: "https://www.behance.net/gallery/110234117/Mockup-web-MNTD",
+      linkWeb: "",
+      image: project08,
+    },
+    {
       name: "Mockup web - Chocó Aventurismo",
       linkDesing:
         "https://www.behance.net/gallery/74270145/Mockup-web-Aventurismo",
       linkWeb: "",
-      image: project06,
+      image: project09,
     },
   ],
 };

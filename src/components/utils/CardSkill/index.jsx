@@ -11,13 +11,11 @@ const CardSkill = ({ name, icon, reducer }) => {
    */
   const animationRandom = () => {
     const animate = Math.floor(Math.random() * 2);
-    if (animate === 1) {
-      setAnimate("animate-scale");
-    } else {
-      setTimeout(() => {
-        setAnimate("animate-scale");
-      }, 1000);
-    }
+    return animate === 1
+      ? setAnimate("animate-scale")
+      : setTimeout(() => {
+          setAnimate("animate-scale");
+        }, 1000);
   };
 
   useEffect(() => {

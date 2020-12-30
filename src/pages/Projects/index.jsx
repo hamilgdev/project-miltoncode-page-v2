@@ -4,8 +4,6 @@ import ProjectsData from "../../data/ProjectsData";
 import NetworksData from "../../data/NetworksData";
 import Button from "../../components/utils/Button";
 
-import "./styles.scss";
-
 const Projects = () => {
   const [network, setNetwork] = useState({});
   const { title, subTitle, projects } = ProjectsData;
@@ -27,13 +25,17 @@ const Projects = () => {
   return (
     <>
       <header className="py-8 bg-c-first-main relative text-center">
-        <h2 className="mb-4 text-c-accent-darker text-fp-xxlarge">{title}</h2>
-        <p className="text-c-first-darker-100 text-fp-base f-first lg:text-fp-xlarge">
-          {subTitle}
-        </p>
+        <div className="l-container">
+          <h2 className="animation-flow-left mb-4 text-c-accent-darker text-fp-xxlarge">
+            {title}
+          </h2>
+          <p className="animation-flow-right text-c-first-darker-100 text-fp-base f-first lg:text-fp-xlarge">
+            {subTitle}
+          </p>
+        </div>
       </header>
       <main className="section-main mb-24">
-        <div className="relative l-container grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="animation-flow-top relative l-container grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <CardProject
               key={index}
