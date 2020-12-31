@@ -1,23 +1,18 @@
 const MenuData = [
   {
-    title: "Home",
+    title: "Sobre mí",
     path: "/",
-    cName: "nav-text",
+    exact: true,
   },
   {
-    title: "Reports",
-    path: "/reports",
-    cName: "nav-text",
+    title: "Proyectos",
+    path: "/projects",
+    exact: false,
   },
   {
-    title: "Products",
-    path: "/products",
-    cName: "nav-text",
-  },
-  {
-    title: "Team",
-    path: "/team",
-    cName: "nav-text",
+    title: "Anotaciones",
+    path: "/annotations",
+    exact: false,
   },
 ];
 

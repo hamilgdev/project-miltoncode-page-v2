@@ -2,25 +2,56 @@
 
 @tailwind components;
 
-/* TYPOGRAPHY */
-.f-first {
-  font-family: var(--f-first);
-}
+@tailwind utilities;
 
-.f-second {
-  font-family: var(--f-second);
-}
+/* estilos de utilidades personalizadas */
+@layer utilities {
+  /* TYPOGRAPHY */
+  .f-first {
+    font-family: var(--f-first);
+  }
 
-/* @screen md {
+  .f-second {
+    font-family: var(--f-second);
+  }
+
+  /* LAYOUT */
   .l-container {
-    @apply max-w-screen-sm m-auto;
+    @apply m-auto px-4 w-full;
+  }
+
+  .l-section-sm {
+    @apply px-4 md:px-0 max-w-screen-sm m-auto;
+  }
+
+  .l-section-md {
+    @apply px-4 md:px-0 max-w-screen-md m-auto mb-8;
+  }
+
+  /* THEME */
+  .animation-transform {
+    @apply transform hover:scale-110 transition-transform duration-300;
+  }
+
+  .title-section {
+    @apply mb-8 uppercase text-fp-xlarge;
+  }
+}
+
+@screen md {
+  .l-container {
+    @apply max-w-screen-sm px-0;
   }
 }
 
 @screen lg {
   .l-container {
-    @apply max-w-screen-lg m-auto;
+    @apply max-w-screen-lg;
   }
-} */
+}
 
-@tailwind utilities;
+@screen xl {
+  .l-container {
+    @apply max-w-screen-xl;
+  }
+}

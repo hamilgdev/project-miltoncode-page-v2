@@ -1,0 +1,29 @@
+// Genera interlineado (borde) en la parte inferior
+.title-decoration {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid var(--c-second-main);
+    border-radius: 50%;
+    width: 54px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+// Aplica una barra detrás de la sección
+.section-main {
+  position: relative;
+  &::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: calc(var(--gutter) * 6);
+    left: 0;
+    top: 0;
+    background: var(--c-first-main);
+    z-index: 0;
+  }
+}
