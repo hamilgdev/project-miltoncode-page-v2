@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import PhotoProfile from "../../assets/img/photo_profile.png";
 import CardSkill from "../../components/utils/CardSkill";
 import NetworksData from "../../data/NetworksData";
@@ -8,6 +8,38 @@ import CV from "../../assets/files/curriculum_vitae_compressed.pdf";
 const AboutUs = () => {
   const { title, subTitle, tagline, sectionAbout, sectionSkills } = AboutUsData;
   const { skills } = sectionSkills;
+
+  const [currentScrollY, setCurrentScrollY] = useState(0);
+  const [tagSections, setTagSections] = useState([]);
+
+  /**
+   * @description Calculate <section> tags and scrollY of current page
+   */
+  useEffect(() => {
+    // getting the <section> tags - nodeList, and convert to an Array
+    const $sections = Array.from(document.querySelectorAll("section"));
+    setTagSections($sections);
+    // getting current scrollY
+    window.addEventListener("scroll", (e) => {
+      const $Window = e.path[1];
+      setCurrentScrollY($Window.scrollY);
+    });
+  }, []);
+
+  /**
+   * @description Add the animation class ... to make the section appear
+   */
+  const handleAnimateSection = () => {
+    const sectionScrollTop = tagSections.map(
+      (tagsection) => tagsection.getBoundingClientRect().top
+    );
+    sectionScrollTop.forEach((el, i) => {
+      if (currentScrollY >= el)
+        tagSections[i].classList.add("animation-flow-top-show");
+    });
+  };
+
+  handleAnimateSection();
 
   return (
     <>
@@ -59,7 +91,7 @@ const AboutUs = () => {
           </div>
         </div>
       </header>
-      <section className="text-center my-24">
+      <section className="opacity-0 text-center my-24">
         <div className="px-4 md:px-0 max-w-screen-md m-auto">
           <h3 className="title-decoration title-section">
             {sectionAbout.title}
@@ -67,7 +99,7 @@ const AboutUs = () => {
           <p className="text-fs-regular">{sectionAbout.description}</p>
         </div>
       </section>
-      <section className="text-center my-24">
+      <section className="opacity-0 text-center my-24">
         <div className="l-section-md">
           <h3 className="title-decoration title-section">
             {sectionSkills.title}
