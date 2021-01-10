@@ -33,7 +33,7 @@ const Annotations = () => {
           </p>
         </div>
       </header>
-      <section className="text-center my-24">
+      <section className="animation-flow-top text-center my-24">
         <h3 className="title-decoration title-section">
           {sectionVisualGuides.title}
         </h3>
