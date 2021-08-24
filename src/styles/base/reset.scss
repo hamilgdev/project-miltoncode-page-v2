@@ -9,6 +9,19 @@ body {
   padding: 0;
   font-family: sans-serif;
   line-height: 1.6;
+
+  /* Width the scroll */
+  &::-webkit-scrollbar {
+    width: calc(var(--gutter) / 2);
+  }
+  /* Styles bar (thumb) of the scroll */
+  &::-webkit-scrollbar-thumb {
+    background: var(--bg-first-gradient);
+  }
+  /* Styles for the (track) of the scroll */
+  &::-webkit-scrollbar-track {
+    background-color: var(--c-accent-darker);
+  }
 }
 
 h1,
