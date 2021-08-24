@@ -43,6 +43,8 @@ module.exports = {
         // Accents color
         "c-accent-lighter": "var(--c-accent-lighter)",
         "c-accent-darker": "var(--c-accent-darker)",
+        // Bg degradients
+        "bg-first-gradient": "var(--bg-first-gradient)",
       },
       boxShadow: {
         "box-md": "var(--box-shadow-md)",

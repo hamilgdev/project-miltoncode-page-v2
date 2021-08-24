@@ -23,7 +23,7 @@ const Annotations = () => {
 
   return (
     <>
-      <header className="py-8 bg-c-first-main relative text-center">
+      <header className="bg-gradient py-8 bg-c-first-main relative text-center">
         <div className="l-container">
           <h2 className="animation-flow-left mb-4 text-c-accent-darker text-fp-xxlarge">
             {title}
