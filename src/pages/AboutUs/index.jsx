@@ -93,7 +93,7 @@ const AboutUs = () => {
           </div>
         </div>
       </header>
-      <section className="opacity-0 text-center my-24">
+      <section className="text-center my-24">
         <div className="px-4 md:px-0 max-w-screen-md m-auto">
           <h3 className="title-decoration title-section">
             {sectionAbout.title}
@@ -101,7 +101,7 @@ const AboutUs = () => {
           <p className="text-fs-regular">{sectionAbout.description}</p>
         </div>
       </section>
-      <section className="opacity-0 text-center my-24">
+      <section className="text-center my-24">
         <div className="l-section-md">
           <h3 className="title-decoration title-section">
             {sectionSkills.title}
