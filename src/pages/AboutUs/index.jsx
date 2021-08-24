@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
-import PhotoProfile from "../../assets/img/photo_profile.png";
+import PhotoProfile from "../../assets/img/new_profile.png";
 import CardSkill from "../../components/utils/CardSkill";
 import NetworksData from "../../data/NetworksData";
 import AboutUsData from "../../data/AboutUsData";
 import CV from "../../assets/files/curriculum_vitae_compressed.pdf";
+
+import "./styles.scss";
 
 const AboutUs = () => {
   const { title, subTitle, tagline, sectionAbout, sectionSkills } = AboutUsData;
@@ -43,7 +45,7 @@ const AboutUs = () => {
 
   return (
     <>
-      <header className="sm:overflow-hidden bg-c-first-main relative">
+      <header className="AboutUs bg-gradient sm:overflow-hidden relative">
         <div className="l-container grid grid-rows-1 grid-flow-row auto-rows-min sm:grid-cols-2 sm:items-center ">
           <div className=" leading-snug">
             <h1 className="animation-flow-left text-c-accent-darker text-fp-xxlarge lg:text-fp-bigger">
@@ -52,7 +54,7 @@ const AboutUs = () => {
             <p className="animation-flow-right text-c-first-darker-100 text-fp-base f-first lg:text-fp-large">
               {subTitle}
             </p>
-            <h2 className="animation-flow-left text-c-first-lighter-100 text-fp-large lg:text-fp-xxlarge">
+            <h2 className="animation-flow-left text-c-accent-darker text-fp-large lg:text-fp-xxlarge">
               {tagline}
             </h2>
           </div>

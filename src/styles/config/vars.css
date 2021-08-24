@@ -25,6 +25,10 @@
   /* Accents color */
   --c-accent-lighter: #f8f8f8;
   --c-accent-darker: #080d19;
+
+  /* COLOR PALETTE - GRADIENTS */
+  --bg-first-gradient: linear-gradient(90deg, #92fe9d 39.58%, #00c9ff 92.19%);
+
   /* TYPOGRAPHY */
   --f-first: "Oswald", sans-serif;
   --f-second: "Raleway", sans-serif;

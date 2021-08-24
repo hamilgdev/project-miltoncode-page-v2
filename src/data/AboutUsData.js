@@ -11,6 +11,7 @@ import iconNetlify from "../assets/svg/netlify-icon.svg";
 import iconReact from "../assets/svg/react-icon.svg";
 import iconJS from "../assets/svg/javascript-icon.svg";
 import iconGatsby from "../assets/svg/gatsby-icon.svg";
+import iconAngular from "../assets/svg/angular-icon.svg";
 import iconPhotoshop from "../assets/svg/photoshop-icon.svg";
 import iconXD from "../assets/svg/xd-icon.svg";
 import iconFigma from "../assets/svg/figma-icon.svg";
@@ -88,6 +89,11 @@ const AboutUsData = {
       {
         name: "JavaScript",
         icon: iconJS,
+        reducer: false,
+      },
+      {
+        name: "Angular",
+        icon: iconAngular,
         reducer: false,
       },
       {
