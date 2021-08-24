@@ -1,16 +1,42 @@
 // Visual guides
-import visualGuide0101 from "../assets/img/visualGuide0101.jpg";
-import visualGuide0102 from "../assets/img/visualGuide0102.jpg";
-import visualGuide0103 from "../assets/img/visualGuide0103.jpg";
-import visualGuide02 from "../assets/img/visualGuide02.jpg";
-import visualGuide0301 from "../assets/img/visualGuide0301.jpg";
-import visualGuide0302 from "../assets/img/visualGuide0302.jpg";
-import visualGuide0303 from "../assets/img/visualGuide0303.jpg";
-import visualGuide04 from "../assets/img/visualGuide04.jpg";
-import visualGuide0501 from "../assets/img/visualGuide0501.jpg";
-import visualGuide0502 from "../assets/img/visualGuide0502.jpg";
-import visualGuide0503 from "../assets/img/visualGuide0503.jpg";
-import visualGuide06 from "../assets/img/visualGuide06.jpg";
+import vsGuide101 from "../assets/img/vsGuide101.jpg";
+import vsGuide102 from "../assets/img/vsGuide102.jpg";
+import vsGuide103 from "../assets/img/vsGuide103.jpg";
+
+import vsGuide201 from "../assets/img/vsGuide201.jpg";
+import vsGuide202 from "../assets/img/vsGuide202.jpg";
+import vsGuide203 from "../assets/img/vsGuide203.jpg";
+import vsGuide204 from "../assets/img/vsGuide204.jpg";
+
+import vsGuide301 from "../assets/img/vsGuide301.jpg";
+import vsGuide302 from "../assets/img/vsGuide302.jpg";
+import vsGuide303 from "../assets/img/vsGuide303.jpg";
+import vsGuide304 from "../assets/img/vsGuide304.jpg";
+import vsGuide305 from "../assets/img/vsGuide305.jpg";
+import vsGuide306 from "../assets/img/vsGuide306.jpg";
+import vsGuide307 from "../assets/img/vsGuide307.jpg";
+
+import vsGuide401 from "../assets/img/vsGuide401.jpg";
+import vsGuide402 from "../assets/img/vsGuide402.jpg";
+import vsGuide403 from "../assets/img/vsGuide403.jpg";
+import vsGuide404 from "../assets/img/vsGuide404.jpg";
+import vsGuide405 from "../assets/img/vsGuide405.jpg";
+import vsGuide406 from "../assets/img/vsGuide406.jpg";
+import vsGuide407 from "../assets/img/vsGuide407.jpg";
+import vsGuide408 from "../assets/img/vsGuide408.jpg";
+
+import vsGuide501 from "../assets/img/vsGuide501.jpg";
+import vsGuide502 from "../assets/img/vsGuide502.jpg";
+import vsGuide503 from "../assets/img/vsGuide503.jpg";
+import vsGuide504 from "../assets/img/vsGuide504.jpg";
+
+import vsGuide601 from "../assets/img/vsGuide601.jpg";
+import vsGuide602 from "../assets/img/vsGuide602.jpg";
+import vsGuide603 from "../assets/img/vsGuide603.jpg";
+import vsGuide604 from "../assets/img/vsGuide604.jpg";
+import vsGuide605 from "../assets/img/vsGuide605.jpg";
+import vsGuide606 from "../assets/img/vsGuide606.jpg";
+
 // challenges
 import challenge01 from "../assets/img/challenge01.jpg";
 // videoclips
@@ -28,29 +54,53 @@ const AnnotationsData = {
     title: "Guías visuales",
     visualGuides: [
       {
-        title: "Marcadores de imágenes",
-        image: [visualGuide0101, visualGuide0102, visualGuide0103],
+        title: "Aplicar Borde con Box-Shadow en CSS",
+        image: [vsGuide101, vsGuide102, vsGuide103],
       },
 
       {
-        title: "Un poco de nomenclatura JavaScript",
-        image: [visualGuide02],
+        title: "3 Sitios Web con una gran galería de Illustraciones",
+        image: [vsGuide201, vsGuide202, vsGuide203, vsGuide204],
       },
       {
-        title: "Galería de Ilustraciones",
-        image: [visualGuide0301, visualGuide0302, visualGuide0303],
+        title: "Crear variantes a los componentes UI en Figma",
+        image: [
+          vsGuide301,
+          vsGuide302,
+          vsGuide303,
+          vsGuide304,
+          vsGuide305,
+          vsGuide306,
+          vsGuide307,
+        ],
       },
       {
-        title: "Tipos de funciones - JavaScript",
-        image: [visualGuide04],
+        title: "Estructura Semántica en HTML5",
+        image: [
+          vsGuide401,
+          vsGuide402,
+          vsGuide403,
+          vsGuide404,
+          vsGuide405,
+          vsGuide406,
+          vsGuide407,
+          vsGuide408,
+        ],
       },
       {
-        title: "Directorio de fuentes",
-        image: [visualGuide0501, visualGuide0502, visualGuide0503],
+        title: "3 Sitios Web con una gran colección de Iconos",
+        image: [vsGuide501, vsGuide502, vsGuide503, vsGuide504],
       },
       {
-        title: "Tipos de datos - JavaScript",
-        image: [visualGuide06],
+        title: "Truncar texto a puntos suspensivos con CSS",
+        image: [
+          vsGuide601,
+          vsGuide602,
+          vsGuide603,
+          vsGuide604,
+          vsGuide605,
+          vsGuide606,
+        ],
       },
     ],
   },
