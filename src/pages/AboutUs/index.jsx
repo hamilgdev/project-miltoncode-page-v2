@@ -3,9 +3,9 @@ import PhotoProfile from "../../assets/img/new_profile.png";
 import CardSkill from "../../components/utils/CardSkill";
 import NetworksData from "../../data/NetworksData";
 import AboutUsData from "../../data/AboutUsData";
-import CV from "../../assets/files/curriculum_vitae_compressed.pdf";
 
 import "./styles.scss";
+import SelectListCV from "../../components/utils/SelectListCV";
 
 const AboutUs = () => {
   const { title, subTitle, tagline, sectionAbout, sectionSkills } = AboutUsData;
@@ -45,7 +45,7 @@ const AboutUs = () => {
 
   return (
     <>
-      <header className="AboutUs bg-gradient sm:overflow-hidden relative">
+      <header className="AboutUs bg-gradient relative">
         <div className="l-container grid grid-rows-1 grid-flow-row auto-rows-min sm:grid-cols-2 sm:items-center ">
           <div className=" leading-snug">
             <h1 className="animation-flow-left text-c-accent-darker text-fp-xxlarge lg:text-fp-bigger">
@@ -82,14 +82,9 @@ const AboutUs = () => {
                 </a>
               ))}
             </div>
-            <a
-              href={CV}
-              download="curriculum_vitae_compressed"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-4 h-12 bg-c-accent-darker hover:text-c-first-main text-c-second-main rounded-b-md sm:rounded-br-none sm:rounded-bl-none sm:rounded-t-md sm:transform sm:hover:scale-y-110 sm:transition-transform sm:duration-300"
-            >
-              <span className="f-first text-fp-base">Descargar CV</span>
-            </a>
+            {/* Component SelectListCV */}
+            <SelectListCV />
+            {/* END Component SelectListCV */}
           </div>
         </div>
       </header>
